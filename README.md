@@ -1,9 +1,9 @@
 Just another conjugate gradient solver written in CUDA,
 using cublas and cusparse.
 
-Function are written using streams. So it is possible
+Function is written using streams. So it is possible
 run multiple solver concurrently on the same device.
 
-CUDA 6.0 required.
+_CUDA 6.0 required._
 
 
