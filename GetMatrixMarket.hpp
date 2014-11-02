@@ -20,12 +20,15 @@ void GetMatrixMarket_CSR_symm( const char* filename,
   int a,b;
   T c;
 
-  std::ifstream fin(filename);
+  std::ifstream fin;
+//  fin.exceptions ( std::ifstream::failbit );
+  fin.open(filename);
+
   while (fin.peek() == '%') fin.ignore(2048, '\n');
 
   fin>>row>>col>>non_zero;
 
-  std::cerr<<row<<" "<<col<<" "<<non_zero<<std::endl;
+//  std::cerr<<row<<" "<<col<<" "<<non_zero<<std::endl;
 
   std::vector<std::map<int,double> > mm(row);
 
