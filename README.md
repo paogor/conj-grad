@@ -1,7 +1,7 @@
 conj-grad
 ---------
 
-Just another _conjugate gradient_ solver written in CUDA,
+Just another _conjugate gradient_ solver function written in CUDA,
 using cuBLAS and cuSPARSE.  
 CUDA 6.0 or higher required.
 
@@ -16,7 +16,7 @@ run multiple solver concurrently on the same device;
 - `csrValA`, `csrRowPtrA` and `csrColIndA`: arrays representing the matrix
 stored in Compressed Storage Row sparse format;  
 - `b`: rhs array;  
-- `x`: unknown array;  
+- `x`: solution array;  
 - `n`: size of system;  
 - `nnz`: non-zero matrix elements; 
 - `tol`: tolerance to stop iterations.  
