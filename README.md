@@ -17,7 +17,7 @@ run multiple solver concurrently on the same device;
 stored in Compressed Storage Row sparse format;  
 - `b`: rhs array;  
 - `x`: solution array;  
-- `n`: size of system;  
+- `n`: size of arrays;  
 - `nnz`: non-zero matrix elements; 
 - `tol`: tolerance to stop iterations.  
 
